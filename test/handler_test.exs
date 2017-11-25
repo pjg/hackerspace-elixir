@@ -11,10 +11,10 @@ defmodule HandlerTest do
 
     expected_response = """
     HTTP/1.1 200 OK
-    Content-Type: text/html
-    Content-Length: 4
+    Content-Type: text/html; charset=utf-8
+    Content-Length: 7
 
-    OK
+    OK Łódź
     """
 
     response = Handler.call(request)
