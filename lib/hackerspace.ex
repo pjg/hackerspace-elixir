@@ -10,7 +10,7 @@ defmodule Hackerspace do
 
   """
   def moduledoc() do
-   "#{ @moduledoc }"
+   @moduledoc
   end
 
   @doc """
