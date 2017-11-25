@@ -3,6 +3,10 @@ defmodule Hackerspace do
   Documentation for Hackerspace.
   """
 
+  def moduledoc() do
+    @moduledoc
+  end
+
   @doc """
   Hello world.
 
