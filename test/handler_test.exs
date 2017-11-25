@@ -1,4 +1,4 @@
-defmodule ServerTest do
+defmodule HandlerTest do
   use ExUnit.Case
 
   test "returns 200 http code" do
@@ -17,7 +17,7 @@ defmodule ServerTest do
     OK
     """
 
-    response = Server.call(request)
+    response = Handler.call(request)
 
     assert response == expected_response
   end
