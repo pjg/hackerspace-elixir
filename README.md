@@ -7,17 +7,44 @@ in [Hacker:Space Trójmiasto](http://hs3.pl/).
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `hackerspace` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:hackerspace, "~> 0.1.0"}
-  ]
-end
+```bash
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/hackerspace](https://hexdocs.pm/hackerspace).
+
+## Running
+
+Run the server:
+
+```bash
+mix run -e "Server.start(4000)"
+```
+
+Test it:
+
+```bash
+curl -X a=a localhost:4000?test=test
+```
+
+Should return:
+
+```
+OK Łódź%
+```
+
+
+
+## Running tests
+
+To run all tests:
+
+```bash
+mix test
+```
+
+To run file watcher:
+
+```bash
+mix test.watch --stale
+```
