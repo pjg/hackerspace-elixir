@@ -24,7 +24,7 @@ mix run -e "Server.start(4000)"
 Test it:
 
 ```bash
-curl -X a=a localhost:4000?test=test
+curl -X POST -d a=a localhost:4000?test=test
 ```
 
 Should return:
